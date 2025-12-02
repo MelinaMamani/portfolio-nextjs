@@ -1,3 +1,16 @@
+export type Nav = {
+  brand: string;
+  menu: {
+    about: string;
+    experience: string;
+    skills: string;
+    projects: string;
+    language: string
+  };
+  menuIconAlt: string;
+  language: { en: string; es: string }
+};
+
 export type Hero = {
   greeting: string;
   subtitle: string;
@@ -35,6 +48,7 @@ export type Footer = {
 };
 
 export type Translations = {
+  nav: Nav
   hero: Hero;
   tech: Tech;
   projects: Projects;

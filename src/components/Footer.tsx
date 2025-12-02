@@ -16,17 +16,19 @@ export default function Footer() {
         </div>
         <div className="flex gap-3">
           <Link
-            href="https://github.com/"
+            href="https://github.com/MelinaMamani"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={t?.footer?.githubLabel}
           >
             <SiGithub size={20} />
             <span className="sr-only">{t?.footer?.github ?? "GitHub"}</span>
           </Link>
           <Link
-            href="https://linkedin.com/"
+            href="https://linkedin.com/in/erika-lidia-melina"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={t?.footer?.linkedinLabel}
           >
             <SiLinkedin size={20} />
             <span className="sr-only">{t?.footer?.linkedin ?? "LinkedIn"}</span>

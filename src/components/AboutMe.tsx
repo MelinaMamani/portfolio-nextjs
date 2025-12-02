@@ -12,7 +12,7 @@ export default function AboutMe({ children, highlight }: Props) {
   const { t } = useI18n();
   const text = highlight ?? t?.about?.description;
   return (
-    <section className="container py-12 px-6">
+    <section id="about" className="container py-12 px-6">
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         whileInView={{ opacity: 1, y: 0 }}

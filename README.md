@@ -1,6 +1,6 @@
 # Portfolio Next.js
 
-Repositorio que contiene el portfolio personal hecho con Next.js 15, React 19, TypeScript y TailwindCSS (App Router).
+Repositorio que contiene el portfolio personal hecho con Next.js 16, React 19, TypeScript y TailwindCSS (App Router).
 
 ## Descripción
 
@@ -31,22 +31,11 @@ npm run dev
 - Se eliminaron los assets genéricos que trae el template `create-next-app` (logos/imagenes y ejemplos de página por defecto).
 - Para personalizar, editá `src/data/projects.ts`, `src/data/technologies.ts` y los componentes en `src/components`.
 
----
+## Estructura
 
-## Estructura del portfolio
-
-Se agregó una estructura inicial dentro de `src/app` con componentes y datos:
-
-- `src/components/` — Componentes React reutilizables (Hero, TechStack, Projects, ProjectCard, AboutMe, Footer).
+- `src/app/` — App Router y páginas.
+- `src/components/` — Componentes reutilizables.
 - `src/data/` — Archivos de datos estáticos (`projects.ts`, `technologies.ts`).
-- `src/styles/` — Pequeños extras de CSS para animaciones.
-- `src/app/page.tsx` — Página principal que consume los componentes y datos.
+- `src/styles/` — CSS adicional y animaciones.
 
-Para ejecutar:
-
-```bash
-npm install
-npm run dev
-```
-
-Puedes modificar los datos en `src/data/projects.ts` y `src/data/technologies.ts`.
+Los datos de ejemplo están en `src/data/`. Modifícalos para personalizar el contenido.

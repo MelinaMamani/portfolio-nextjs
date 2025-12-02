@@ -11,21 +11,21 @@ export default function Header() {
     <header className="border-b border-border bg-card">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         <div className="flex items-center gap-4">
-          <Link href="#" className="text-sm font-semibold">
-            {t?.nav?.brand ?? ""}
+          <Link href="/" className="text-sm font-semibold">
+            {t?.nav?.brand}
           </Link>
           <nav className="hidden items-center gap-3 sm:flex">
             <Link
               href="#projects"
               className="text-sm text-muted-foreground hover:underline"
             >
-              {t?.nav?.menu?.projects ?? ""}
+              {t?.nav?.menu?.projects}
             </Link>
             <Link
               href="#about"
               className="text-sm text-muted-foreground hover:underline"
             >
-              {t?.nav?.menu?.about ?? ""}
+              {t?.nav?.menu?.about}
             </Link>
           </nav>
         </div>
@@ -40,7 +40,7 @@ export default function Header() {
                 : "bg-muted text-muted-foreground"
             )}
           >
-            {t?.nav?.language?.en ?? ""}
+            {t?.nav?.language?.en}
           </button>
           <button
             aria-pressed={locale === "es"}
@@ -52,7 +52,7 @@ export default function Header() {
                 : "bg-muted text-muted-foreground"
             )}
           >
-            {t?.nav?.language?.es ?? ""}
+            {t?.nav?.language?.es}
           </button>
         </div>
       </div>
