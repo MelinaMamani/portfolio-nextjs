@@ -1,0 +1,159 @@
+{
+  "nav": {
+    "brand": "Melina Mamaní Portfolio",
+    "menu": {
+      "about": "About me",
+      "experience": "Experience",
+      "skills": "Skills",
+      "projects": "Projects",
+      "language": "Spanish"
+    },
+    "menuIconAlt": "iconMenu"
+    ,
+    "language": { "en": "EN", "es": "ES" }
+  },
+  "hero": {
+    "greeting": "Hi there! I am Melina Mamaní",
+    "subtitle": "Passionate Frontend Developer",
+    "profileImageAlt": "Profile Image"
+  },
+  "about": {
+    "title": "About me",
+    "paragraphs": [
+      "I'm Melina Erika Mamaní, a frontend developer from Buenos Aires, Argentina. I graduated as a programming technician in 2017 and have been learning new technologies ever since. Currently, I'm focused on improving my skills in Javascript and ReactJS.",
+      "In 2015, I traveled to London to learn English, obtained a course completion certificate, and continued studying until I achieved level B2 with the FCE certificate that have allowed me to work in international teams."
+    ],
+    "images": {
+      "londonAlt": "London 2015",
+      "londonResAlt": "London 2015 Responsive"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "role": "Argentine Government",
+        "date": "June 2021 - November 2021",
+        "paragraphs": [
+          "This project involved creating the Infrastructure Railway Works Auction section on the ADIFSE website. This would allow the railway company to sell their old items to registered users of the site.",
+          "This site was built in HTML, CSS, jQuery, JS, Bootstrap V2 and PHP.",
+          "I made visual adjustments and user interactions on the website.",
+          "I created mock-ups for user-directed emails.",
+          "I also assisted in creating the user manual to help users understand the site.",
+          "I was part of another project where the Ministry of Tourism required sections for retirees, pensioners, and families to access vacations given by the government through registration.",
+          "The site was built in HTML, CSS, JS, Bootstrap V2 and Laravel.",
+          "I worked on developing UI of the forms and creating other views to control the data uploaded by users in Blade Laravel."
+        ],
+        "links": {
+          "adifseWebsite": "ADIFSE Website"
+        }
+      },
+      {
+        "role": "Hogarth Worldwide",
+        "date": "November 2021 - February 2022",
+        "paragraphs": [
+          "I worked on a confidential project for a client who sells all kinds of mobile devices globally. Mainly, I geolocated websites and emails in different languages (English, Spanish, Portuguese, and French) and countries (Canada, USA, Brazil, Colombia, Mexico, LATAM ES and LATAM EN). My team was composed of people from Canada, USA, and LATAM.",
+          "This site was built HTML, CSS and JS. SVN for code versioning",
+          "My tasks consisted of fixing visual bugs on the client's website on different screen sizes and removing or adding sections depending on the country where the site was displayed.",
+          "I also developed sections of the website and emails for different countries.",
+          "I had at least three meetings a week with my team, where we mostly spoke in English."
+        ]
+      },
+      {
+        "role": "99minutos",
+        "date": "March 2022 - March 2023",
+        "paragraphs": [
+          "It's a growing logistics startup. I'm involved in many projects, some of which are built on NextJS, ReactJS, Typescript, GraphQL, Axios, Rest API, MUI, Mantine. In all projects, I had designs provided by the UX team. And I work with agile methodology (Jira).",
+          "I developed the fulfillment section on the shipping site. It consists of 3 tabs for products, product shipments, and orders.",
+          "I participated in a project to reschedule your product delivery appointment, developing with ReactJS, Typescript, and Mantine.",
+          "I perform updates or improvements on the current landing page or the shipping site, tasks such as consuming a new service and creating the frontend part of it, updating text or images on the site.",
+          "Currently, I'm developing a new landing page with NextJS, Typescript, and MUI alongside another team of developers.",
+          "I also gained experience in support by handling customer tickets and performing fixes as needed."
+        ],
+        "links": {
+          "landingPage": "Landing Page"
+        }
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "list": [
+      "HTML",
+      "CSS",
+      "Sass",
+      "Bootstrap",
+      "TailwindCSS",
+      "Javascript",
+      "Typescript",
+      "Rest API",
+      "GraphQL",
+      "Styled components",
+      "Mantine",
+      "Material UI",
+      "ReactJS",
+      "NextJS"
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "id": "p1",
+        "name": "Form",
+        "imagesAlt": "Form",
+        "links": {
+          "demo": "Demo",
+          "repo": "Repository"
+        }
+      },
+      {
+        "id": "p2",
+        "name": "Factory",
+        "imagesAlt": "Factory",
+        "links": {
+          "demo": "Demo",
+          "repo": "Repository"
+        }
+      }
+    ],
+    "itemsById": {
+      "p1": {
+        "name": "Form",
+        "description": "",
+        "imagesAlt": "Form",
+        "links": { "demo": "Demo", "repo": "Repository" }
+      },
+      "p2": {
+        "name": "Factory",
+        "description": "",
+        "imagesAlt": "Factory",
+        "links": { "demo": "Demo", "repo": "Repository" }
+      }
+    }
+  },
+  "footer": {
+    "email": "erikamelinamamani@gmail.com",
+    "linkedin": "Melina Erika Mamaní",
+    "github": "Melina Mamaní",
+    "contactEmailLabel": "Gmail",
+    "linkedinLabel": "Linkedin",
+    "githubLabel": "Github"
+  },
+  
+  "alts": {
+    "profileImage": "Profile Image",
+    "spanishFlag": "Spanish",
+    "menuIcon": "iconMenu",
+    "imgEmailAlt": "email",
+    "imgFulfillAlt": "fulfill",
+    "projectImgFormAlt": "Form",
+    "projectImgFactoryAlt": "Factory",
+    "icons": {
+      "demoIconAlt": "Demo icon",
+      "githubIconAlt": "Github icon",
+      "gmailIconAlt": "Gmail icon",
+      "linkedinIconAlt": "Linkedin icon"
+    }
+  }
+}

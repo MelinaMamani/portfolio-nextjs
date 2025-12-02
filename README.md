@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Next.js
 
-## Getting Started
+Repositorio que contiene el portfolio personal hecho con Next.js 15, React 19, TypeScript y TailwindCSS (App Router).
 
-First, run the development server:
+## Descripción
+
+Proyecto minimalista y responsive con pequeñas animaciones usando Framer Motion. Incluye secciones:
+
+- Hero
+- Tech Stack
+- Projects
+- About Me
+- Footer
+
+## Estructura principal
+
+- `src/app/` — App Router y páginas
+- `src/components/` — Componentes reutilizables (Hero, TechStack, Projects, ProjectCard, AboutMe, Footer)
+- `src/data/` — Archivos de datos estáticos (`projects.ts`, `technologies.ts`)
+- `src/styles/` — CSS adicional
+
+## Ejecutar localmente
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Notas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Se eliminaron los assets genéricos que trae el template `create-next-app` (logos/imagenes y ejemplos de página por defecto).
+- Para personalizar, editá `src/data/projects.ts`, `src/data/technologies.ts` y los componentes en `src/components`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Estructura del portfolio
 
-To learn more about Next.js, take a look at the following resources:
+Se agregó una estructura inicial dentro de `src/app` con componentes y datos:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/components/` — Componentes React reutilizables (Hero, TechStack, Projects, ProjectCard, AboutMe, Footer).
+- `src/data/` — Archivos de datos estáticos (`projects.ts`, `technologies.ts`).
+- `src/styles/` — Pequeños extras de CSS para animaciones.
+- `src/app/page.tsx` — Página principal que consume los componentes y datos.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Para ejecutar:
 
-## Deploy on Vercel
+```bash
+npm install
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Puedes modificar los datos en `src/data/projects.ts` y `src/data/technologies.ts`.

@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "brand": "Portafolio de Melina Mamaní",
+    "menu": {
+      "about": "Sobre mí",
+      "experience": "Experiencia",
+      "skills": "Habilidades",
+      "projects": "Proyectos",
+      "language": "Español"
+    },
+    "menuIconAlt": "icono de menú",
+    "language": { "en": "EN", "es": "ES" }
+  },
+  "hero": {
+    "greeting": "¡Hola! Soy Melina Mamaní",
+    "subtitle": "Desarrolladora Frontend apasionada",
+    "profileImageAlt": "Imagen de perfil"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "paragraphs": [
+      "Soy Melina Erika Mamaní, desarrolladora frontend de Buenos Aires, Argentina. Me recibí como técnica en programación en 2017 y desde entonces sigo aprendiendo nuevas tecnologías. Actualmente, me estoy enfocando en mejorar mis habilidades en Javascript y ReactJS.",
+      "En 2015, viajé a Londres para aprender inglés, obtuve un certificado de finalización de curso y continué estudiando hasta alcanzar el nivel B2 con el certificado FCE que me ha permitido trabajar en equipos internacionales."
+    ],
+    "images": {
+      "londonAlt": "Londres 2015",
+      "londonResAlt": "Londres 2015 Responsive"
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "items": [
+      {
+        "role": "Gobierno Argentino",
+        "date": "Junio 2021 - Noviembre 2021",
+        "paragraphs": [
+          "Este proyecto consistió en la creación de la sección Subasta de Obras Ferroviarias en el sitio web de ADIFSE. Esto permitiría a la empresa ferroviaria vender sus artículos antiguos a usuarios registrados del sitio.",
+          "Este sitio fue construido en HTML, CSS, jQuery, JS, Bootstrap V2 y PHP.",
+          "Realicé ajustes visuales y de interacción de usuario en el sitio.",
+          "Creé mock-ups para correos electrónicos dirigidos a usuarios.",
+          "También ayudé en la creación del manual de usuario para facilitar el uso del sitio.",
+          "Formé parte de otro proyecto donde el Ministerio de Turismo requería secciones para jubilados, pensionados y familias para acceder a vacaciones otorgadas por el gobierno mediante registro.",
+          "El sitio se construyó en HTML, CSS, JS, Bootstrap V2 y Laravel.",
+          "Trabajé en el desarrollo de la interfaz de usuario de los formularios y en la creación de otras vistas para controlar los datos subidos por los usuarios en Blade Laravel."
+        ],
+        "links": {
+          "adifseWebsite": "Sitio ADIFSE"
+        }
+      },
+      {
+        "role": "Hogarth Worldwide",
+        "date": "Noviembre 2021 - Febrero 2022",
+        "paragraphs": [
+          "Trabajé en un proyecto confidencial para un cliente que vende todo tipo de dispositivos móviles a nivel mundial. Principalmente geolocalicé sitios web y correos en diferentes idiomas (inglés, español, portugués y francés) y países (Canadá, EE. UU., Brasil, Colombia, México, LATAM ES y LATAM EN). Mi equipo estaba compuesto por personas de Canadá, EE. UU. y LATAM.",
+          "Este sitio fue desarrollado en HTML, CSS y JS. SVN para versionamiento de código",
+          "Mis tareas consistieron en corregir errores visuales en el sitio del cliente en diferentes tamaños de pantalla y eliminar o agregar secciones según el país donde se mostraba el sitio.",
+          "También desarrollé secciones del sitio y correos electrónicos para diferentes países.",
+          "Tenía al menos tres reuniones por semana con mi equipo, donde principalmente hablábamos en inglés."
+        ]
+      },
+      {
+        "role": "99minutos",
+        "date": "Marzo 2022 - Actualmente",
+        "paragraphs": [
+          "Es una startup logística en crecimiento. Estoy involucrada en muchos proyectos, algunos de los cuales están construidos con NextJS, ReactJS, Typescript, GraphQL, Axios, Rest API, MUI, Mantine. En todos los proyectos, recibí diseños proporcionados por el equipo de UX. Y trabajo con metodología ágil (Jira).",
+          "Desarrollé la sección de fulfillment en el sitio de envíos. Consiste en 3 pestañas para productos, envíos de productos y pedidos.",
+          "Participé en un proyecto para reprogramar la cita de entrega de tu producto, desarrollando con ReactJS, Typescript y Mantine.",
+          "Realizo actualizaciones o mejoras en la landing actual o el sitio de envíos, tareas como consumir un nuevo servicio y crear la parte frontend del mismo, actualizar texto o imágenes en el sitio.",
+          "Actualmente, estoy desarrollando una nueva landing con NextJS, Typescript y MUI junto a otro equipo de desarrolladores.",
+          "También adquirí experiencia en soporte manejando tickets de clientes y realizando correcciones cuando fue necesario."
+        ],
+        "links": {
+          "landingPage": "Landing Page"
+        }
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades",
+    "list": [
+      "HTML",
+      "CSS",
+      "Sass",
+      "Bootstrap",
+      "TailwindCSS",
+      "Javascript",
+      "Typescript",
+      "Rest API",
+      "GraphQL",
+      "Styled components",
+      "Mantine",
+      "Material UI",
+      "ReactJS",
+      "NextJS"
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "items": [
+      {
+        "id": "p1",
+        "name": "Form",
+        "imagesAlt": "Form",
+        "links": {
+          "demo": "Demo",
+          "repo": "Repositorio"
+        }
+      },
+      {
+        "id": "p2",
+        "name": "Factory",
+        "imagesAlt": "Factory",
+        "links": {
+          "demo": "Demo",
+          "repo": "Repositorio"
+        }
+      }
+    ],
+    "itemsById": {
+      "p1": {
+        "name": "Form",
+        "description": "Descripción del proyecto Form",
+        "imagesAlt": "Form",
+        "links": { "demo": "Demo", "repo": "Repositorio" }
+      },
+      "p2": {
+        "name": "Factory",
+        "description": "Descripción del proyecto Factory",
+        "imagesAlt": "Factory",
+        "links": { "demo": "Demo", "repo": "Repositorio" }
+      }
+    }
+  },
+  "footer": {
+    "email": "erikamelinamamani@gmail.com",
+    "linkedin": "Melina Erika Mamaní",
+    "github": "Melina Mamaní",
+    "contactEmailLabel": "Gmail",
+    "linkedinLabel": "Linkedin",
+    "githubLabel": "Github"
+  },
+  "alts": {
+    "profileImage": "Imagen de perfil",
+    "spanishFlag": "Español",
+    "menuIcon": "icono de menú",
+    "imgEmailAlt": "correo",
+    "imgFulfillAlt": "fulfill",
+    "projectImgFormAlt": "Form",
+    "projectImgFactoryAlt": "Factory",
+    "icons": {
+      "demoIconAlt": "icono de Demo",
+      "githubIconAlt": "icono de Github",
+      "gmailIconAlt": "icono de Gmail",
+      "linkedinIconAlt": "icono de Linkedin"
+    }
+  }
+}
