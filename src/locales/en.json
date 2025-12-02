@@ -8,8 +8,7 @@
       "projects": "Projects",
       "language": "Spanish"
     },
-    "menuIconAlt": "iconMenu"
-    ,
+    "menuIconAlt": "iconMenu",
     "language": { "en": "EN", "es": "ES" }
   },
   "hero": {
@@ -140,7 +139,7 @@
     "linkedinLabel": "Linkedin",
     "githubLabel": "Github"
   },
-  
+
   "alts": {
     "profileImage": "Profile Image",
     "spanishFlag": "Spanish",

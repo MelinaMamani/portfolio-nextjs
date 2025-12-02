@@ -15,10 +15,16 @@ export default function Header() {
             {t?.nav?.brand ?? ""}
           </Link>
           <nav className="hidden items-center gap-3 sm:flex">
-            <Link href="#projects" className="text-sm text-muted-foreground hover:underline">
+            <Link
+              href="#projects"
+              className="text-sm text-muted-foreground hover:underline"
+            >
               {t?.nav?.menu?.projects ?? ""}
             </Link>
-            <Link href="#about" className="text-sm text-muted-foreground hover:underline">
+            <Link
+              href="#about"
+              className="text-sm text-muted-foreground hover:underline"
+            >
               {t?.nav?.menu?.about ?? ""}
             </Link>
           </nav>
@@ -29,7 +35,9 @@ export default function Header() {
             onClick={() => setLocale("en")}
             className={clsx(
               "px-3 py-1 rounded text-sm",
-              locale === "en" ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+              locale === "en"
+                ? "bg-primary text-primary-foreground"
+                : "bg-muted text-muted-foreground"
             )}
           >
             {t?.nav?.language?.en ?? ""}
@@ -39,7 +47,9 @@ export default function Header() {
             onClick={() => setLocale("es")}
             className={clsx(
               "px-3 py-1 rounded text-sm",
-              locale === "es" ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+              locale === "es"
+                ? "bg-primary text-primary-foreground"
+                : "bg-muted text-muted-foreground"
             )}
           >
             {t?.nav?.language?.es ?? ""}

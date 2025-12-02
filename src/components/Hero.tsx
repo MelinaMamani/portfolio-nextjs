@@ -14,8 +14,12 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
         className="mx-auto max-w-3xl text-center sm:text-left"
       >
-        <h1 className="text-3xl font-bold leading-tight sm:text-4xl">{t?.hero?.greeting ?? ""}</h1>
-        <p className="mt-2 text-lg font-medium text-muted sm:text-xl">{t?.hero?.subtitle}</p>
+        <h1 className="text-3xl font-bold leading-tight sm:text-4xl">
+          {t?.hero?.greeting ?? ""}
+        </h1>
+        <p className="mt-2 text-lg font-medium text-muted sm:text-xl">
+          {t?.hero?.subtitle}
+        </p>
         {/* Hero description intentionally empty - use subtitle and about sections for detailed text */}
         <div className="mt-6 flex justify-center gap-3 sm:justify-start">
           <Link

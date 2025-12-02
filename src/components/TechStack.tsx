@@ -18,10 +18,12 @@ type Props = {
   techs?: DataTech[];
 };
 
-type LucideComponent = React.ComponentType<{
-  size?: number;
-  color?: string;
-} & React.SVGProps<SVGSVGElement>>;
+type LucideComponent = React.ComponentType<
+  {
+    size?: number;
+    color?: string;
+  } & React.SVGProps<SVGSVGElement>
+>;
 
 const ICON_MAP: Record<string, LucideComponent> = {
   TypeScript: Code,
@@ -40,7 +42,9 @@ export default function TechStack({ techs = [] }: Props) {
     <section className="container py-12 px-6">
       <div className="mx-auto max-w-3xl">
         <h2 className="text-lg font-semibold">{t?.tech?.title ?? ""}</h2>
-        <p className="mt-2 text-sm text-muted-foreground">{t?.tech?.description ?? ""}</p>
+        <p className="mt-2 text-sm text-muted-foreground">
+          {t?.tech?.description ?? ""}
+        </p>
 
         <motion.ul
           initial="hidden"

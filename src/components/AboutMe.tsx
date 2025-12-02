@@ -8,10 +8,7 @@ type Props = {
   highlight?: string;
 };
 
-export default function AboutMe({
-  children,
-  highlight,
-}: Props) {
+export default function AboutMe({ children, highlight }: Props) {
   const { t } = useI18n();
   const text = highlight ?? t?.about?.description;
   return (
@@ -22,7 +19,7 @@ export default function AboutMe({
         viewport={{ once: true }}
         className="mx-auto max-w-3xl"
       >
-        <h2 className="text-lg font-semibold">{t?.about?.title ?? "Sobre mí"}</h2>
+        <h2 className="text-lg font-semibold">{t.about?.title}</h2>
         <p className="mt-2 text-sm text-muted-foreground">{text}</p>
         {children ? <div className="mt-3">{children}</div> : null}
       </motion.div>
