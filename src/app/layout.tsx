@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/favicon.ico",
   },
-  themeColor: '#0f172a',
+  themeColor: "#0f172a",
   openGraph: {
     title: "Melina Mamaní — Portfolio",
     description:
