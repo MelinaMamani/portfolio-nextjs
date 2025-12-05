@@ -19,8 +19,9 @@
   "about": {
     "title": "About me",
     "paragraphs": [
-      "I'm Melina Erika Mamaní, a frontend developer from Buenos Aires, Argentina. I graduated as a programming technician in 2017 and have been learning new technologies ever since. Currently, I'm focused on improving my skills in Javascript and ReactJS.",
-      "In 2015, I traveled to London to learn English, obtained a course completion certificate, and continued studying until I achieved level B2 with the FCE certificate that have allowed me to work in international teams."
+      "Frontend Developer based in Buenos Aires, Argentina, with a technical degree in programming obtained in 2017. I have 4 years of professional experience and currently operate at a Semi Senior (SSR) level. My work focuses on JavaScript and ReactJS, with a strong emphasis on quality, efficiency, and continuous improvement. I incorporate artificial intelligence tools into my development workflow to optimize processes, accelerate delivery, and enhance the consistency and scalability of the solutions I build.",
+
+      "I completed English studies during my stay in London in 2015 and later obtained the FCE certification (B2 level). This proficiency allows me to collaborate effectively with international teams and contribute to professional environments where English communication is essential."
     ],
     "images": {
       "londonAlt": "London 2015",

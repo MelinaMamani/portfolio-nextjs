@@ -34,7 +34,21 @@ export type Projects = {
 
 export type About = {
   title: string;
-  description: string;
+  description?: string;
+  paragraphs?: string[];
+  images?: Record<string, string>;
+};
+
+export type Experience = {
+  title: string;
+  description?: string;
+  no_experience?: string;
+  items?: Array<{
+    role: string;
+    date: string;
+    paragraphs: string[];
+    links?: Record<string, string>;
+  }>;
 };
 
 export type Footer = {
@@ -53,5 +67,6 @@ export type Translations = {
   tech: Tech;
   projects: Projects;
   about: About;
+  experience: Experience;
   footer: Footer;
 };

@@ -19,8 +19,9 @@
   "about": {
     "title": "Sobre mí",
     "paragraphs": [
-      "Soy Melina Erika Mamaní, desarrolladora frontend de Buenos Aires, Argentina. Me recibí como técnica en programación en 2017 y desde entonces sigo aprendiendo nuevas tecnologías. Actualmente, me estoy enfocando en mejorar mis habilidades en Javascript y ReactJS.",
-      "En 2015, viajé a Londres para aprender inglés, obtuve un certificado de finalización de curso y continué estudiando hasta alcanzar el nivel B2 con el certificado FCE que me ha permitido trabajar en equipos internacionales."
+      "Desarrolladora Frontend con base en Buenos Aires, Argentina, con una formación técnica en programación obtenida en 2017. Cuento con 4 años de experiencia profesional y desempeño actualmente en un nivel Semi Senior (SSR). Mi trabajo se centra en el desarrollo con JavaScript y ReactJS, manteniendo un enfoque orientado a la calidad, la eficiencia y la mejora continua. Integro herramientas de inteligencia artificial en mi flujo de trabajo para optimizar procesos, acelerar el desarrollo y elevar la consistencia de las soluciones entregadas.",
+
+      "Poseo formación en inglés adquirida durante mi estadía en Londres en 2015, complementada con la certificación internacional FCE (nivel B2). Este dominio del idioma me permite colaborar de manera efectiva con equipos internacionales y contribuir en entornos profesionales que requieren comunicación en inglés."
     ],
     "images": {
       "londonAlt": "Londres 2015",

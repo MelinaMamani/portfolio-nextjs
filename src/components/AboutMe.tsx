@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 type Props = {
   children?: React.ReactNode;
-  highlight?: string;
 };
 
-export default function AboutMe({ children, highlight }: Props) {
+export default function AboutMe({ children }: Props) {
   const { t } = useI18n();
-  const text = highlight ?? t?.about?.description;
+  const paragraphs = t?.about?.paragraphs || [];
+  
   return (
     <section id="about" className="container py-12 px-6">
       <motion.div
@@ -19,9 +19,15 @@ export default function AboutMe({ children, highlight }: Props) {
         viewport={{ once: true }}
         className="mx-auto max-w-3xl"
       >
-        <h2 className="text-lg font-semibold">{t.about?.title}</h2>
-        <p className="mt-2 text-sm text-muted-foreground">{text}</p>
-        {children ? <div className="mt-3">{children}</div> : null}
+        <h2 className="text-lg font-semibold">{t?.about?.title}</h2>
+        <div className="mt-4 space-y-3">
+          {paragraphs.map((para: string, idx: number) => (
+            <p key={idx} className="text-sm text-muted-foreground leading-relaxed">
+              {para}
+            </p>
+          ))}
+        </div>
+        {children ? <div className="mt-6">{children}</div> : null}
       </motion.div>
     </section>
   );
