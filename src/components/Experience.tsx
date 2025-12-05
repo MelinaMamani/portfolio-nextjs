@@ -56,7 +56,10 @@ export default function Experience({ items = [] }: Props) {
 
                 <div className="mt-4 space-y-2">
                   {exp.paragraphs.map((para, pidx) => (
-                    <p key={pidx} className="text-sm text-muted-foreground leading-relaxed">
+                    <p
+                      key={pidx}
+                      className="text-sm text-muted-foreground leading-relaxed"
+                    >
                       {para}
                     </p>
                   ))}

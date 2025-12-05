@@ -10,7 +10,7 @@ type Props = {
 export default function AboutMe({ children }: Props) {
   const { t } = useI18n();
   const paragraphs = t?.about?.paragraphs || [];
-  
+
   return (
     <section id="about" className="container py-12 px-6">
       <motion.div
@@ -22,7 +22,10 @@ export default function AboutMe({ children }: Props) {
         <h2 className="text-lg font-semibold">{t?.about?.title}</h2>
         <div className="mt-4 space-y-3">
           {paragraphs.map((para: string, idx: number) => (
-            <p key={idx} className="text-sm text-muted-foreground leading-relaxed">
+            <p
+              key={idx}
+              className="text-sm text-muted-foreground leading-relaxed"
+            >
               {para}
             </p>
           ))}
