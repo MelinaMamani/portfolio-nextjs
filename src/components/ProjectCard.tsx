@@ -2,6 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
+import { ExternalLink } from "lucide-react";
 import type { ProjectItem } from "@/lib/types";
 
 type Props = {
@@ -17,17 +19,34 @@ export default function ProjectCard({ project }: Props) {
       viewport={{ once: true }}
       transition={{ duration: 0.45 }}
       whileHover={{ scale: 1.02 }}
-      className="flex flex-col rounded-lg border border-border p-4 bg-card"
+      className="bg-(--accent) flex flex-col rounded-lg border border-border p-4 bg-card text-black shadow hover:shadow-md transition-shadow"
     >
-      <h3 className="text-base font-semibold leading-snug">{project.name}</h3>
-      <div className="mt-4 flex flex-wrap gap-3 justify-end">
-        {project.links.map((link) => (
+      {/* Imagen */}
+      <div className="relative w-full h-48 rounded overflow-hidden mb-4">
+        <Image
+          src={project.imageSrc}
+          alt={project.imagesAlt}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+      </div>
+
+      {/* Título */}
+      <h3 className="text-base font-semibold leading-snug text-foreground">
+        {project.name}
+      </h3>
+
+      {/* Links */}
+      <div className="mt-4 flex flex-wrap gap-3">
+        {project.links.map((link, idx) => (
           <Link
             key={link.url}
             href={link.url}
             target="_blank"
-            className="text-sm font-medium text-primary hover:underline"
+            className="inline-flex items-center gap-1 text-sm font-medium text-foreground hover:text-primary transition-colors"
           >
+            {idx === 0 && <ExternalLink size={16} />}
             {link.text}
           </Link>
         ))}

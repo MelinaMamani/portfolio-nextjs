@@ -12,7 +12,7 @@
   },
   "hero": {
     "greeting": "Hi there! I am Melina Mamaní",
-    "cta": "See experience",
+    "cta": "See my work experience",
     "secondaryCta": "Download CV",
     "profileImageAlt": "Profile Image"
   },
@@ -115,6 +115,7 @@
         "id": "p1",
         "name": "Form",
         "imagesAlt": "Form",
+        "imageSrc": "/projects/chform.png",
         "links": [
           {
             "text": "Demo",
@@ -130,6 +131,7 @@
         "id": "p2",
         "name": "Factory",
         "imagesAlt": "Factory",
+        "imageSrc": "/projects/factory.png",
         "links": [
           {
             "text": "Demo",

@@ -33,6 +33,7 @@ export type ProjectItem = {
   id: string;
   name: string;
   imagesAlt: string;
+  imageSrc: string;
   links: Array<LinkItem>;
 };
 
