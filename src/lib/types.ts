@@ -39,16 +39,17 @@ export type About = {
   images?: Record<string, string>;
 };
 
+export type ExperienceItem = {
+  place: string;
+  date: string;
+  paragraphs: string[];
+};
+
 export type Experience = {
   title: string;
-  description?: string;
-  no_experience?: string;
-  items?: Array<{
-    role: string;
-    date: string;
-    paragraphs: string[];
-    links?: Record<string, string>;
-  }>;
+  items: Array<ExperienceItem>;
+  olderBtn: string;
+  newerBtn: string;
 };
 
 export type Footer = {

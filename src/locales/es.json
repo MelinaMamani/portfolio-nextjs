@@ -1,6 +1,6 @@
 {
   "nav": {
-    "brand": "Portafolio de Melina Mamaní",
+    "brand": "Melina Mamaní Portfolio",
     "menu": {
       "about": "Sobre mí",
       "experience": "Experiencia",
@@ -32,7 +32,7 @@
     "title": "Experiencia",
     "items": [
       {
-        "role": "Gobierno Argentino",
+        "place": "Gobierno Argentino",
         "date": "Junio 2021 - Noviembre 2021",
         "paragraphs": [
           "Este proyecto consistió en la creación de la sección Subasta de Obras Ferroviarias en el sitio web de ADIFSE. Esto permitiría a la empresa ferroviaria vender sus artículos antiguos a usuarios registrados del sitio.",
@@ -43,13 +43,10 @@
           "Formé parte de otro proyecto donde el Ministerio de Turismo requería secciones para jubilados, pensionados y familias para acceder a vacaciones otorgadas por el gobierno mediante registro.",
           "El sitio se construyó en HTML, CSS, JS, Bootstrap V2 y Laravel.",
           "Trabajé en el desarrollo de la interfaz de usuario de los formularios y en la creación de otras vistas para controlar los datos subidos por los usuarios en Blade Laravel."
-        ],
-        "links": {
-          "adifseWebsite": "Sitio ADIFSE"
-        }
+        ]
       },
       {
-        "role": "Hogarth Worldwide",
+        "place": "Hogarth Worldwide",
         "date": "Noviembre 2021 - Febrero 2022",
         "paragraphs": [
           "Trabajé en un proyecto confidencial para un cliente que vende todo tipo de dispositivos móviles a nivel mundial. Principalmente geolocalicé sitios web y correos en diferentes idiomas (inglés, español, portugués y francés) y países (Canadá, EE. UU., Brasil, Colombia, México, LATAM ES y LATAM EN). Mi equipo estaba compuesto por personas de Canadá, EE. UU. y LATAM.",
@@ -60,7 +57,7 @@
         ]
       },
       {
-        "role": "99minutos",
+        "place": "99minutos",
         "date": "Marzo 2022 - Actualmente",
         "paragraphs": [
           "Es una startup logística en crecimiento. Estoy involucrada en muchos proyectos, algunos de los cuales están construidos con NextJS, ReactJS, Typescript, GraphQL, Axios, Rest API, MUI, Mantine. En todos los proyectos, recibí diseños proporcionados por el equipo de UX. Y trabajo con metodología ágil (Jira).",
@@ -69,12 +66,27 @@
           "Realizo actualizaciones o mejoras en la landing actual o el sitio de envíos, tareas como consumir un nuevo servicio y crear la parte frontend del mismo, actualizar texto o imágenes en el sitio.",
           "Actualmente, estoy desarrollando una nueva landing con NextJS, Typescript y MUI junto a otro equipo de desarrolladores.",
           "También adquirí experiencia en soporte manejando tickets de clientes y realizando correcciones cuando fue necesario."
-        ],
-        "links": {
-          "landingPage": "Landing Page"
-        }
+        ]
+      },
+      {
+        "place": "Mercado Libre",
+        "date": "Abril 2023 - Enero 2026",
+        "paragraphs": [
+          "Actualmente formo parte del equipo de Seller Experience en Mercado Libre, uno de los ecosistemas de e-commerce más grandes de la región. Mi rol se centra en el desarrollo de soluciones orientadas a vendedores, contribuyendo a optimizar la gestión de sus operaciones dentro de la plataforma.",
+          "Trabajo principalmente con React.js, TypeScript y Next.js, aplicando estándares internos y buenas prácticas para garantizar un desarrollo sólido y escalable. También utilizo tecnologías internas de la compañía que permiten una integración eficiente con los distintos servicios y herramientas del ecosistema.",
+
+          "Una parte importante de mi trabajo involucra la incorporación de inteligencia artificial en los flujos de desarrollo. Esto incluye la automatización de tareas, el análisis de patrones y la mejora continua del código mediante herramientas asistidas por IA, lo que acelera la entrega y eleva la calidad de las soluciones implementadas.",
+
+          "Entre mis responsabilidades se encuentra la creación y mantenimiento de componentes reutilizables y de interfaces responsivas orientadas a mejorar la experiencia del usuario vendedor. También participo en la integración de datos mediante APIs REST, gestionando solicitudes a través de librerías internas diseñadas para la arquitectura de Mercado Libre.",
+
+          "Además, implemento pruebas automatizadas utilizando Playwright y React Testing Library. Esto asegura la estabilidad del producto y permite detectar regresiones de manera temprana, contribuyendo así a un ciclo de desarrollo más confiable.",
+
+          "Trabajo en estrecha colaboración con equipos de diseño, backend y producto dentro de un entorno ágil. Esta dinámica facilita la iteración rápida, la comunicación constante y la entrega continua de mejoras. También participo activamente en procesos de optimización de rendimiento y refactorización de código para garantizar mantenibilidad, escalabilidad y alineación con los estándares técnicos de la compañía."
+        ]
       }
-    ]
+    ],
+    "olderBtn": "Más antiguos",
+    "newerBtn": "Más recientes"
   },
   "skills": {
     "title": "Habilidades",

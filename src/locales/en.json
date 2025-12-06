@@ -32,7 +32,7 @@
     "title": "Experience",
     "items": [
       {
-        "role": "Argentine Government",
+        "place": "Argentine Government",
         "date": "June 2021 - November 2021",
         "paragraphs": [
           "This project involved creating the Infrastructure Railway Works Auction section on the ADIFSE website. This would allow the railway company to sell their old items to registered users of the site.",
@@ -43,13 +43,10 @@
           "I was part of another project where the Ministry of Tourism required sections for retirees, pensioners, and families to access vacations given by the government through registration.",
           "The site was built in HTML, CSS, JS, Bootstrap V2 and Laravel.",
           "I worked on developing UI of the forms and creating other views to control the data uploaded by users in Blade Laravel."
-        ],
-        "links": {
-          "adifseWebsite": "ADIFSE Website"
-        }
+        ]
       },
       {
-        "role": "Hogarth Worldwide",
+        "place": "Hogarth Worldwide",
         "date": "November 2021 - February 2022",
         "paragraphs": [
           "I worked on a confidential project for a client who sells all kinds of mobile devices globally. Mainly, I geolocated websites and emails in different languages (English, Spanish, Portuguese, and French) and countries (Canada, USA, Brazil, Colombia, Mexico, LATAM ES and LATAM EN). My team was composed of people from Canada, USA, and LATAM.",
@@ -60,7 +57,7 @@
         ]
       },
       {
-        "role": "99minutos",
+        "place": "99minutos",
         "date": "March 2022 - March 2023",
         "paragraphs": [
           "It's a growing logistics startup. I'm involved in many projects, some of which are built on NextJS, ReactJS, Typescript, GraphQL, Axios, Rest API, MUI, Mantine. In all projects, I had designs provided by the UX team. And I work with agile methodology (Jira).",
@@ -69,12 +66,28 @@
           "I perform updates or improvements on the current landing page or the shipping site, tasks such as consuming a new service and creating the frontend part of it, updating text or images on the site.",
           "Currently, I'm developing a new landing page with NextJS, Typescript, and MUI alongside another team of developers.",
           "I also gained experience in support by handling customer tickets and performing fixes as needed."
-        ],
-        "links": {
-          "landingPage": "Landing Page"
-        }
+        ]
+      },
+      {
+        "place": "Mercado Libre",
+        "date": "April 2023 - January 2026",
+        "paragraphs": [
+          "I am currently part of the Seller Experience team at Mercado Libre, one of the largest e-commerce ecosystems in the region. My work focuses on building solutions for sellers, helping improve the management of their operations and enhancing their overall experience on the platform.",
+
+          "I develop web applications primarily using React.js, TypeScript, and Next.js, following internal standards and best practices to ensure scalable and maintainable solutions. I also work with internal technologies built specifically for Mercado Libre's ecosystem, enabling seamless integration with platform services and tools.",
+
+          "A key aspect of my place involves incorporating artificial intelligence tools into the development workflow. This includes automating processes, identifying improvement opportunities, and enhancing code quality through AI-assisted tools, which significantly speeds up delivery and increases product reliability.",
+
+          "My responsibilities include building and maintaining reusable UI components and responsive interfaces designed to improve the seller experience. I also contribute to data integration efforts using REST APIs and internal request-handling libraries tailored to the platform's architecture.",
+
+          "Additionally, I implement automated tests using Playwright and React Testing Library to ensure product stability and detect regressions early. This contributes to a more predictable and high-quality development cycle.",
+
+          "I collaborate closely with design, backend, and product teams in an agile environment. This cross-functional dynamic enables fast iteration, effective communication, and continuous delivery of improvements. I am also involved in performance optimization and code refactoring to ensure scalability, maintainability, and alignment with the company's technical standards."
+        ]
       }
-    ]
+    ],
+    "olderBtn": "Older Experiences",
+    "newerBtn": "Newer Experiences"
   },
   "skills": {
     "title": "Skills",
