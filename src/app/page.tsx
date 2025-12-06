@@ -1,10 +1,9 @@
 import React from "react";
-import Hero from "../components/Hero";
-import TechStack from "../components/TechStack";
-import Projects from "../components/Projects";
-import Experience from "../components/Experience";
-import Footer from "../components/Footer";
-import TECHS from "../data/technologies";
+import Hero from "@/components/Hero";
+import TechStack from "@/components/TechStack";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -12,7 +11,7 @@ export default function Home() {
       <main className="mx-auto w-full">
         <Hero />
         <Experience />
-        <TechStack techs={TECHS} />
+        <TechStack />
         <Projects />
       </main>
       <Footer />

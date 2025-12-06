@@ -19,8 +19,18 @@ export default function Hero() {
         {/* Texto */}
         <div className="text-center sm:text-left flex-1">
           <h1 className="text-3xl font-bold leading-tight sm:text-4xl">
-            {t?.hero?.greeting}
+            {t?.hero?.greeting.split("").map((char, i) => (
+              <motion.span
+                key={i}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: i * 0.05 }}
+              >
+                {char === " " ? "\u00A0" : char}
+              </motion.span>
+            ))}
           </h1>
+
           <p className="mt-4 text-muted-foreground">{t?.hero?.aboutMe}</p>
 
           {/* CTA buttons */}

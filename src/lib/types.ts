@@ -20,10 +20,14 @@ export type Hero = {
   aboutMe: string;
 };
 
-export type Tech = {
+type SkillCategory = {
   title: string;
-  description?: string;
-  no_technologies?: string;
+  list: string[];
+};
+
+export type Skills = {
+  title: string;
+  categories: Record<string, SkillCategory>;
 };
 
 type LinkItem = {
@@ -70,7 +74,7 @@ export type Footer = {
 export type Translations = {
   nav: Nav
   hero: Hero;
-  tech: Tech;
+  skills: Skills;
   projects: Projects;
   experience: Experience;
   footer: Footer;

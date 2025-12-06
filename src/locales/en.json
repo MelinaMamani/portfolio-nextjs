@@ -79,23 +79,34 @@
     "newerBtn": "Newer Experiences"
   },
   "skills": {
-    "title": "Skills",
-    "list": [
-      "HTML",
-      "CSS",
-      "Sass",
-      "Bootstrap",
-      "TailwindCSS",
-      "Javascript",
-      "Typescript",
-      "Rest API",
-      "GraphQL",
-      "Styled components",
-      "Mantine",
-      "Material UI",
-      "ReactJS",
-      "NextJS"
-    ]
+    "title": "Technologies",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "list": [
+          "html",
+          "css",
+          "sass",
+          "bootstrap",
+          "tailwind",
+          "styled",
+          "mantine",
+          "mui"
+        ]
+      },
+      "languages": {
+        "title": "Languages",
+        "list": ["js", "ts"]
+      },
+      "frameworks": {
+        "title": "Frameworks & Libraries",
+        "list": ["react", "next"]
+      },
+      "backend": {
+        "title": "Backend & APIs",
+        "list": ["rest", "graphql"]
+      }
+    }
   },
   "projects": {
     "title": "Projects",
