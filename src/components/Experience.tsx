@@ -1,92 +1,70 @@
 "use client";
-import React, { useState } from "react";
-import { useI18n } from "../lib/I18nProvider";
+import React from "react";
 import { motion } from "framer-motion";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { useI18n } from "../lib/I18nProvider";
 import { ExperienceItem } from "../lib/types";
-
-type SortOrder = "desc" | "asc";
 
 export default function Experience() {
   const { t } = useI18n();
   const items = (t?.experience?.items as ExperienceItem[]) ?? [];
-
-  const [sortOrder, setSortOrder] = useState<SortOrder>("desc");
-  const sortedItems = sortOrder === "desc" ? [...items].reverse() : items;
+  const colors = ["var(--primary)", "var(--accent)"];
 
   return (
-    <section id="experience" className="container py-12 px-6">
-      <div className="mx-auto max-w-3xl">
-        <div className="flex items-center justify-between gap-4 mb-2">
-          <h2 className="text-lg font-semibold">{t?.experience?.title}</h2>
+    <section id="experience" className="container py-16 px-6">
+      <h2 className="text-lg font-semibold mb-10 text-center text-foreground">
+        {t?.experience?.title}
+      </h2>
 
-          <div className="flex gap-2">
-            <button
-              onClick={() => setSortOrder("desc")}
-              className={`inline-flex items-center gap-1 px-3 py-1 rounded text-xs font-medium transition-colors ${
-                sortOrder === "desc"
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-muted text-muted-foreground hover:bg-card"
-              }`}
+      <div
+        className="space-y-8 relative
+             before:absolute before:top-0 before:bottom-0 
+             before:left-5 md:before:left-1/2 md:before:-translate-x-1/2
+             before:w-1 before:bg-white before:z-0"
+      >
+        {items.map((exp: ExperienceItem, idx: number) => (
+          <motion.div
+            key={idx}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: idx * 0.1 }}
+            className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group z-10"
+          >
+            {/* Icon */}
+            <div
+              className="flex items-center justify-center w-10 h-10 rounded-full border border-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
+              style={{
+                backgroundColor: colors[idx % colors.length],
+                color: "var(--foreground)",
+              }}
             >
-              <ChevronUp size={14} />
-              {t?.experience?.newerBtn}
-            </button>
-
-            <button
-              onClick={() => setSortOrder("asc")}
-              className={`inline-flex items-center gap-1 px-3 py-1 rounded text-xs font-medium transition-colors ${
-                sortOrder === "asc"
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-muted text-muted-foreground hover:bg-card"
-              }`}
-            >
-              <ChevronDown size={14} />
-              {t?.experience?.olderBtn}
-            </button>
-          </div>
-        </div>
-
-        <div className="mt-8 relative">
-          <div className="relative pl-8">
-            <div className="absolute left-3 top-0 bottom-0 w-px bg-linear-to-b from-primary via-border to-primary" />
-
-            {sortedItems.map((exp: ExperienceItem, idx: number) => (
-              <motion.article
-                key={idx}
-                initial={{ opacity: 0, x: -12 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.45, delay: idx * 0.1 }}
-                className="mb-8 relative group"
+              <svg
+                className="fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="10"
               >
-                <div className="absolute -left-7 top-1 w-5 h-5 rounded-full bg-background border-2 border-primary flex items-center justify-center">
-                  <div className="w-2 h-2 rounded-full bg-primary" />
-                </div>
+                <path
+                  fillRule="nonzero"
+                  d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z"
+                />
+              </svg>
+            </div>
 
-                <div className="pl-2 pt-1 pb-4">
-                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-2">
-                    <h3 className="text-base font-semibold">{exp.place}</h3>
-                    <span className="text-xs font-medium text-primary">
-                      {exp.date}
-                    </span>
-                  </div>
-
-                  <div className="space-y-2">
-                    {exp.paragraphs.map((p: string, i: number) => (
-                      <p
-                        key={i}
-                        className="text-sm text-muted-foreground leading-relaxed"
-                      >
-                        {p}
-                      </p>
-                    ))}
-                  </div>
-                </div>
-              </motion.article>
-            ))}
-          </div>
-        </div>
+            {/* Card */}
+            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-card p-4 rounded border border-border shadow ml-4 md:ml-0">
+              <div className="flex items-center justify-between mb-1">
+                <div className="font-bold text-foreground">{exp.place}</div>
+                <time className="font-medium text-primary">{exp.date}</time>
+              </div>
+              <div className="space-y-2 text-muted-foreground">
+                {exp.paragraphs.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

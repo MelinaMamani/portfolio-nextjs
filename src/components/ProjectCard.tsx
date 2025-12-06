@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useI18n } from "../lib/I18nProvider";
 import type { ProjectItem } from "@/lib/types";
 
 type Props = {
@@ -10,8 +9,6 @@ type Props = {
 };
 
 export default function ProjectCard({ project }: Props) {
-  const { t } = useI18n();
-
   return (
     <motion.article
       layout

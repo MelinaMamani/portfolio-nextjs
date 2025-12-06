@@ -10,7 +10,6 @@ import {
   Layers,
   Terminal,
   Box,
-  BoxSelect,
 } from "lucide-react";
 import type { Tech as DataTech } from "../data/technologies";
 
