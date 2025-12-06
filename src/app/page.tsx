@@ -12,8 +12,8 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <main className="mx-auto w-full">
         <Hero />
-        <AboutMe />
         <Experience />
+        <AboutMe />
         <TechStack techs={TECHS} />
         <Projects />
       </main>

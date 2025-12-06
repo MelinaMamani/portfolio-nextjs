@@ -1,19 +1,19 @@
 {
   "nav": {
     "brand": "Melina Mamaní Portfolio",
-    "menu": {
-      "about": "About me",
-      "experience": "Experience",
-      "skills": "Skills",
-      "projects": "Projects",
-      "language": "Spanish"
-    },
+    "menu": [
+      { "id": "experience", "text": "Experience", "href": "#experience" },
+      { "id": "about", "text": "About me", "href": "#about" },
+      { "id": "tech", "text": "Technologies", "href": "#tech" },
+      { "id": "projects", "text": "Projects ", "href": "#projects" }
+    ],
     "menuIconAlt": "iconMenu",
     "language": { "en": "EN", "es": "ES" }
   },
   "hero": {
     "greeting": "Hi there! I am Melina Mamaní",
-    "subtitle": "Passionate Frontend Developer",
+    "cta": "See experience",
+    "secondaryCta": "Download CV",
     "profileImageAlt": "Profile Image"
   },
   "about": {

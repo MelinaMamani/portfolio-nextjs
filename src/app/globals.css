@@ -28,6 +28,10 @@
   --muted-foreground: #b0b0b0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   body {
     background-color: rgb(61 61 61 / 1);

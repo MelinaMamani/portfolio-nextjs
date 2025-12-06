@@ -1,21 +1,21 @@
+export type MenuItem = {
+  id: string;
+  text: string;
+  href: string;
+};
+
 export type Nav = {
   brand: string;
-  menu: {
-    about: string;
-    experience: string;
-    skills: string;
-    projects: string;
-    language: string
-  };
+  menu: Array<MenuItem>;
   menuIconAlt: string;
   language: { en: string; es: string }
 };
 
 export type Hero = {
   greeting: string;
-  subtitle: string;
+  cta: string;
+  secondaryCta: string;
   profileImageAlt?: string;
-  see_projects?: string;
 };
 
 export type Tech = {
