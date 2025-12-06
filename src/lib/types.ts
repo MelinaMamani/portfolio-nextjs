@@ -15,7 +15,9 @@ export type Hero = {
   greeting: string;
   cta: string;
   secondaryCta: string;
-  profileImageAlt?: string;
+  secondaryLinkCta: string;
+  profileImageAlt: string;
+  aboutMe: string;
 };
 
 export type Tech = {
@@ -40,13 +42,6 @@ export type ProjectItem = {
 export type Projects = {
   title: string;
   items: Array<ProjectItem>;
-};
-
-export type About = {
-  title: string;
-  description?: string;
-  paragraphs?: string[];
-  images?: Record<string, string>;
 };
 
 export type ExperienceItem = {
@@ -77,7 +72,6 @@ export type Translations = {
   hero: Hero;
   tech: Tech;
   projects: Projects;
-  about: About;
   experience: Experience;
   footer: Footer;
 };

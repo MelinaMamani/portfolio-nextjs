@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useI18n } from "../lib/I18nProvider";
 import clsx from "clsx";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Home } from "lucide-react";
 import { MenuItem } from "@/lib/types";
 
 export default function Header() {
@@ -24,10 +24,13 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <Link
             href="/"
-            className="text-sm font-semibold hover:opacity-80 transition"
+            className="flex items-center hover:opacity-80 transition"
             aria-label="Go to homepage"
           >
-            {t?.nav?.brand}
+            <Home className="hidden sm:block w-6 h-6 text-white" />
+            <span className="block sm:hidden text-sm font-semibold text-white">
+              {t?.nav?.brand}
+            </span>
           </Link>
 
           <nav

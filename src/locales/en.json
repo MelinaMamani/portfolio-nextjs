@@ -3,7 +3,6 @@
     "brand": "Melina Mamaní Portfolio",
     "menu": [
       { "id": "experience", "text": "Experience", "href": "#experience" },
-      { "id": "about", "text": "About me", "href": "#about" },
       { "id": "tech", "text": "Technologies", "href": "#tech" },
       { "id": "projects", "text": "Projects ", "href": "#projects" }
     ],
@@ -14,19 +13,9 @@
     "greeting": "Hi there! I am Melina Mamaní",
     "cta": "See my work experience",
     "secondaryCta": "Download CV",
-    "profileImageAlt": "Profile Image"
-  },
-  "about": {
-    "title": "About me",
-    "paragraphs": [
-      "Frontend Developer based in Buenos Aires, Argentina, with a technical degree in programming obtained in 2017. I have 4 years of professional experience and currently operate at a Semi Senior (SSR) level. My work focuses on JavaScript and ReactJS, with a strong emphasis on quality, efficiency, and continuous improvement. I incorporate artificial intelligence tools into my development workflow to optimize processes, accelerate delivery, and enhance the consistency and scalability of the solutions I build.",
-
-      "I completed English studies during my stay in London in 2015 and later obtained the FCE certification (B2 level). This proficiency allows me to collaborate effectively with international teams and contribute to professional environments where English communication is essential."
-    ],
-    "images": {
-      "londonAlt": "London 2015",
-      "londonResAlt": "London 2015 Responsive"
-    }
+    "secondaryLinkCta": "https://drive.google.com/file/d/1T05gGN1VQ6ODo4Ax_h-PZvadTtnfZcPh/view?usp=drive_link",
+    "profileImageAlt": "Profile Image",
+    "aboutMe": "Frontend Developer (SSR) from Buenos Aires with 4 years of experience. Skilled in NextJS and AI tools to optimize workflows, with advanced-intermediate English (FCE B2) for international collaboration."
   },
   "experience": {
     "title": "Experience",

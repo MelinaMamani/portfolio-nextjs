@@ -3,7 +3,6 @@
     "brand": "Melina Mamaní Portfolio",
     "menu": [
       { "id": "experience", "text": "Experiencia", "href": "#experience" },
-      { "id": "about", "text": "Sobre mí", "href": "#about" },
       { "id": "tech", "text": "Tecnologías", "href": "#tech" },
       { "id": "projects", "text": "Proyectos", "href": "#projects" }
     ],
@@ -14,19 +13,9 @@
     "greeting": "¡Hola! Soy Melina Mamaní",
     "cta": "Conoce mi experiencia",
     "secondaryCta": "Descargar CV",
-    "profileImageAlt": "Imagen de perfil"
-  },
-  "about": {
-    "title": "Sobre mí",
-    "paragraphs": [
-      "Desarrolladora Frontend con base en Buenos Aires, Argentina, con una formación técnica en programación obtenida en 2017. Cuento con 4 años de experiencia profesional y desempeño actualmente en un nivel Semi Senior (SSR). Mi trabajo se centra en el desarrollo con JavaScript y ReactJS, manteniendo un enfoque orientado a la calidad, la eficiencia y la mejora continua. Integro herramientas de inteligencia artificial en mi flujo de trabajo para optimizar procesos, acelerar el desarrollo y elevar la consistencia de las soluciones entregadas.",
-
-      "Poseo formación en inglés adquirida durante mi estadía en Londres en 2015, complementada con la certificación internacional FCE (nivel B2). Este dominio del idioma me permite colaborar de manera efectiva con equipos internacionales y contribuir en entornos profesionales que requieren comunicación en inglés."
-    ],
-    "images": {
-      "londonAlt": "Londres 2015",
-      "londonResAlt": "Londres 2015 Responsive"
-    }
+    "secondaryLinkCta": "https://drive.google.com/file/d/1KYpZ0cigT2QcBOLTAqz_wc37HonPbSHk/view?usp=drive_link",
+    "profileImageAlt": "Imagen de perfil",
+    "aboutMe": "Desarrolladora Frontend SSR de Buenos Aires con 4 años de experiencia. Trabajo con NextJS e integro herramientas de IA para optimizar procesos y entregar soluciones eficientes. Inglés intermedio-avanzado (FCE B2) para colaborar con equipos internacionales."
   },
   "experience": {
     "title": "Experiencia",
