@@ -115,35 +115,33 @@
         "id": "p1",
         "name": "Form",
         "imagesAlt": "Form",
-        "links": {
-          "demo": "Demo",
-          "repo": "Repository"
-        }
+        "links": [
+          {
+            "text": "Demo",
+            "url": "https://tarjeta-de-bienvenida.netlify.app/"
+          },
+          {
+            "text": "Repository",
+            "url": "https://github.com/MelinaMamani/ChallengeForm"
+          }
+        ]
       },
       {
         "id": "p2",
         "name": "Factory",
         "imagesAlt": "Factory",
-        "links": {
-          "demo": "Demo",
-          "repo": "Repository"
-        }
+        "links": [
+          {
+            "text": "Demo",
+            "url": "https://factory-challenge.netlify.app/"
+          },
+          {
+            "text": "Repository",
+            "url": "https://github.com/MelinaMamani/ChallengeFactory"
+          }
+        ]
       }
-    ],
-    "itemsById": {
-      "p1": {
-        "name": "Form",
-        "description": "",
-        "imagesAlt": "Form",
-        "links": { "demo": "Demo", "repo": "Repository" }
-      },
-      "p2": {
-        "name": "Factory",
-        "description": "",
-        "imagesAlt": "Factory",
-        "links": { "demo": "Demo", "repo": "Repository" }
-      }
-    }
+    ]
   },
   "footer": {
     "email": "erikamelinamamani@gmail.com",

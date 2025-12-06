@@ -48,14 +48,14 @@ export default async function RootLayout({
 }>) {
   const cookieStore = await cookies();
   const cookieLocale = (cookieStore.get("locale")?.value ?? "") as string;
-  const defaultLocale = cookieLocale === "es" ? "es" : "en";
+  const locale = cookieLocale === "es" ? "es" : "en";
 
   return (
-    <html lang={defaultLocale}>
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <I18nProvider defaultLocale={defaultLocale}>
+        <I18nProvider locale={locale}>
           <Header />
           {children}
         </I18nProvider>

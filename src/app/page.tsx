@@ -5,7 +5,6 @@ import Projects from "../components/Projects";
 import AboutMe from "../components/AboutMe";
 import Experience from "../components/Experience";
 import Footer from "../components/Footer";
-import PROJECTS from "../data/projects";
 import TECHS from "../data/technologies";
 
 export default function Home() {
@@ -16,7 +15,7 @@ export default function Home() {
         <AboutMe />
         <Experience />
         <TechStack techs={TECHS} />
-        <Projects projects={PROJECTS} />
+        <Projects />
       </main>
       <Footer />
     </div>

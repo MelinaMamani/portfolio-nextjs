@@ -1,5 +1,5 @@
 "use client";
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useMemo, useState } from "react";
 import type { Locale } from "./i18n";
 import { getTranslations } from "./i18n";
 import type { Translations } from "./types";
@@ -13,30 +13,24 @@ type I18nContextShape = {
 const I18nContext = createContext<I18nContextShape | undefined>(undefined);
 
 type Props = {
-  defaultLocale?: Locale;
+  locale: Locale;
   children: React.ReactNode;
 };
 
-export function I18nProvider({ defaultLocale = "en", children }: Props) {
-  const [locale, setLocale] = useState<Locale>(() => {
-    if (typeof window === "undefined") return defaultLocale;
-    const stored = localStorage.getItem("locale");
-    if (stored === "en" || stored === "es") return stored as Locale;
-    return defaultLocale;
-  });
+export function I18nProvider({ locale: serverLocale, children }: Props) {
+  const [locale, setLocale] = useState<Locale>(serverLocale);
 
-  const t = React.useMemo(() => getTranslations(locale), [locale]);
+  const t = useMemo(() => getTranslations(locale), [locale]);
 
-  useEffect(() => {
+  const changeLocale = (l: Locale) => {
+    setLocale(l);
     try {
-      localStorage.setItem("locale", locale);
-    } catch {
-      // ignore
-    }
-  }, [locale]);
+      localStorage.setItem("locale", l);
+    } catch {}
+  };
 
   return (
-    <I18nContext.Provider value={{ locale, setLocale, t }}>
+    <I18nContext.Provider value={{ locale, setLocale: changeLocale, t }}>
       {children}
     </I18nContext.Provider>
   );

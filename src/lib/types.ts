@@ -24,12 +24,21 @@ export type Tech = {
   no_technologies?: string;
 };
 
+type LinkItem = {
+  text: string;
+  url: string;
+};
+
+export type ProjectItem = {
+  id: string;
+  name: string;
+  imagesAlt: string;
+  links: Array<LinkItem>;
+};
+
 export type Projects = {
   title: string;
-  description?: string;
-  see_project?: string;
-  items?: Array<{ id: string; name: string; imagesAlt?: string; links?: Record<string, string> }>;
-  itemsById?: Record<string, { name: string; description?: string; imagesAlt?: string; links?: Record<string, string> }>;
+  items: Array<ProjectItem>;
 };
 
 export type About = {
