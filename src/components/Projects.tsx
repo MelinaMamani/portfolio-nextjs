@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useI18n } from "../lib/I18nProvider";
+import { useI18n } from "@/lib/I18nProvider";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 import { ProjectItem } from "@/lib/types";

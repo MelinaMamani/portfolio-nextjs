@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { useI18n } from "../lib/I18nProvider";
+import { useI18n } from "@/lib/I18nProvider";
 import clsx from "clsx";
 import { Menu, X, Home } from "lucide-react";
 import { MenuItem } from "@/lib/types";
@@ -76,8 +76,13 @@ export default function Header() {
         </button>
       </div>
 
-      {open && (
-        <div className="sm:hidden bg-(--primary) px-6 pb-4 flex flex-col gap-4">
+      <div
+        className={clsx(
+          "sm:hidden overflow-hidden transition-all duration-300 ease-in-out bg-(--primary)",
+          open ? "max-h-64 opacity-100 pb-4 px-6" : "max-h-0 opacity-0 px-6"
+        )}
+      >
+        <div className="flex flex-col gap-4 pt-2">
           {t?.nav?.menu?.map((item: MenuItem) => (
             <Link
               key={item.id}
@@ -110,7 +115,7 @@ export default function Header() {
             ))}
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }

@@ -3,18 +3,24 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import { useI18n } from "../lib/I18nProvider";
+import { useI18n } from "@/lib/I18nProvider";
 
 export default function Hero() {
   const { t } = useI18n();
 
   return (
-    <section className="min-h-screen flex items-center py-16 px-6 pt-24 sm:py-24">
+    <section className="min-h-screen flex items-center py-12 px-4 pt-20 sm:py-24">
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="mx-auto flex flex-col-reverse items-center gap-8 sm:flex-row sm:items-start sm:gap-12 max-w-5xl"
+        className="
+          mx-auto 
+          max-w-md sm:max-w-5xl 
+          px-4 sm:px-6 
+          flex flex-col-reverse items-center gap-8 
+          sm:flex-row sm:items-start sm:gap-12
+        "
       >
         {/* Texto */}
         <div className="text-center sm:text-left flex-1">
@@ -45,6 +51,8 @@ export default function Hero() {
             <Link
               href={t?.hero?.secondaryLinkCta}
               className="inline-flex items-center rounded-full border border-primary px-5 py-2 text-sm font-semibold text-primary transition hover:scale-[1.02]"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {t?.hero?.secondaryCta}
             </Link>
@@ -52,7 +60,7 @@ export default function Hero() {
         </div>
 
         {/* Imagen */}
-        <div className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-lg">
+        <div className="relative w-40 h-40 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-lg">
           <Image
             src="/hero/me.jpeg"
             alt={t?.hero?.profileImageAlt}

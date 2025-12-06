@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { SiGithub, SiLinkedin } from "react-icons/si";
-import { useI18n } from "../lib/I18nProvider";
+import { useI18n } from "@/lib/I18nProvider";
 
 export default function Footer() {
   const { t } = useI18n();

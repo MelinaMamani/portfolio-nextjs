@@ -12,10 +12,10 @@
   "hero": {
     "greeting": "Hi there! I am Melina Mamaní",
     "cta": "See my work experience",
-    "secondaryCta": "Download CV",
+    "secondaryCta": "View my Resume",
     "secondaryLinkCta": "https://drive.google.com/file/d/1T05gGN1VQ6ODo4Ax_h-PZvadTtnfZcPh/view?usp=drive_link",
     "profileImageAlt": "Profile Image",
-    "aboutMe": "Frontend Developer (SSR) from Buenos Aires with 4 years of experience. Skilled in NextJS and AI tools to optimize workflows, with advanced-intermediate English (FCE B2) for international collaboration."
+    "aboutMe": "Frontend Developer (SSR) from Buenos Aires with 4 years of experience. Skilled in Next.js and AI tools to optimize workflows, with advanced-intermediate English (FCE B2) for international collaboration."
   },
   "experience": {
     "title": "Experience",
@@ -26,7 +26,7 @@
         "paragraphs": [
           "I am currently part of the Seller Experience team at Mercado Libre, one of the largest e-commerce ecosystems in the region. My work focuses on building solutions for sellers, helping improve the management of their operations and enhancing their overall experience on the platform.",
 
-          "I develop web applications primarily using React.js, TypeScript, and Next.js, following internal standards and best practices to ensure scalable and maintainable solutions. I also work with internal technologies built specifically for Mercado Libre's ecosystem, enabling seamless integration with platform services and tools.",
+          "I develop web applications primarily using React, TypeScript, and Next.js, following internal standards and best practices to ensure scalable and maintainable solutions. I also work with internal technologies built specifically for Mercado Libre's ecosystem, enabling seamless integration with platform services and tools.",
 
           "A key aspect of my place involves incorporating artificial intelligence tools into the development workflow. This includes automating processes, identifying improvement opportunities, and enhancing code quality through AI-assisted tools, which significantly speeds up delivery and increases product reliability.",
 
@@ -41,11 +41,11 @@
         "place": "99minutos",
         "date": "March 2022 - March 2023",
         "paragraphs": [
-          "It's a growing logistics startup. I'm involved in many projects, some of which are built on NextJS, ReactJS, Typescript, GraphQL, Axios, Rest API, MUI, Mantine. In all projects, I had designs provided by the UX team. And I work with agile methodology (Jira).",
+          "It's a growing logistics startup. I'm involved in many projects, some of which are built on Next.js, React, Typescript, GraphQL, Axios, Rest API, MUI, Mantine. In all projects, I had designs provided by the UX team. And I work with agile methodology (Jira).",
           "I developed the fulfillment section on the shipping site. It consists of 3 tabs for products, product shipments, and orders.",
-          "I participated in a project to reschedule your product delivery appointment, developing with ReactJS, Typescript, and Mantine.",
+          "I participated in a project to reschedule your product delivery appointment, developing with React, Typescript, and Mantine.",
           "I perform updates or improvements on the current landing page or the shipping site, tasks such as consuming a new service and creating the frontend part of it, updating text or images on the site.",
-          "Currently, I'm developing a new landing page with NextJS, Typescript, and MUI alongside another team of developers.",
+          "Currently, I'm developing a new landing page with Next.js, Typescript, and MUI alongside another team of developers.",
           "I also gained experience in support by handling customer tickets and performing fixes as needed."
         ]
       },

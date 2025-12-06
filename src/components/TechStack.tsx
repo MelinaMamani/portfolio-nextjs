@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useI18n } from "../lib/I18nProvider";
+import { useI18n } from "@/lib/I18nProvider";
 import { motion } from "framer-motion";
 import { TECHS, TechItem } from "@/data/technologies";
 import * as Icons from "react-icons/si";
@@ -13,7 +13,7 @@ export default function TechStack() {
   const skills: Skills = t?.skills;
 
   return (
-    <section className="container py-12 px-6">
+    <section id="tech" className="container py-12 px-6">
       <div className="mx-auto max-w-3xl">
         <h2 className="text-lg font-semibold">{skills.title}</h2>
 

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import I18nProvider from "../lib/I18nProvider";
+import I18nProvider from "@/lib/I18nProvider";
 import { cookies } from "next/headers";
-import Header from "../components/Header";
+import Header from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +15,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport = {
+  themeColor: "#0f172a",
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://melina-mamani.netlify.app"),
   title: "Melina Mamaní — Portfolio",
   description:
     "Portfolio personal: Frontend Engineer · Next.js, TypeScript, TailwindCSS",
@@ -23,12 +28,11 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/favicon.ico",
   },
-  themeColor: "#0f172a",
   openGraph: {
     title: "Melina Mamaní — Portfolio",
     description:
       "Portfolio personal: Frontend Engineer · Next.js, TypeScript, TailwindCSS",
-    url: "https://melinamamani.dev",
+    url: "/",
     siteName: "Melina Mamaní",
     images: [{ url: "/favicon.ico", alt: "Melina Mamaní" }],
     type: "website",
