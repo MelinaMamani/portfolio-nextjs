@@ -4,6 +4,7 @@ import "./globals.css";
 import I18nProvider from "@/lib/I18nProvider";
 import { cookies } from "next/headers";
 import Header from "@/components/Header";
+import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -51,12 +52,14 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className={poppins.className}>
-      <body className="antialiased">
-        <I18nProvider locale={locale}>
-          <Header />
-          {children}
-        </I18nProvider>
-      </body>
+      <SmoothScrollProvider>
+        <body className="antialiased">
+          <I18nProvider locale={locale}>
+            <Header />
+            {children}
+          </I18nProvider>
+        </body>
+      </SmoothScrollProvider>
     </html>
   );
 }
