@@ -113,7 +113,7 @@
     "items": [
       {
         "id": "p1",
-        "name": "Form",
+        "name": "Generate your profile - Form",
         "imagesAlt": "Form",
         "imageSrc": "/projects/chform.png",
         "links": [
@@ -129,7 +129,7 @@
       },
       {
         "id": "p2",
-        "name": "Factory",
+        "name": "Factory services viewer",
         "imagesAlt": "Factory",
         "imageSrc": "/projects/factory.png",
         "links": [

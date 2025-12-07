@@ -112,7 +112,7 @@
     "items": [
       {
         "id": "p1",
-        "name": "Form",
+        "name": "Formulario para generar tu perfil",
         "imagesAlt": "Form",
         "imageSrc": "/projects/chform.png",
         "links": [
@@ -128,7 +128,7 @@
       },
       {
         "id": "p2",
-        "name": "Factory",
+        "name": "Visualizador de servicios de fábrica",
         "imagesAlt": "Factory",
         "imageSrc": "/projects/factory.png",
         "links": [
