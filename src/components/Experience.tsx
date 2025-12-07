@@ -43,11 +43,15 @@ export default function Experience() {
             </div>
 
             {/* Card */}
-            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-card p-4 rounded border border-border shadow ml-4 md:ml-0">
-              <div className="flex items-center justify-between mb-1">
+            <div
+              className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-card p-4 rounded border border-border shadow ml-4 md:ml-0"
+              role="article"
+            >
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1 gap-1">
                 <div className="font-bold text-foreground">{exp.place}</div>
                 <time className="font-medium text-primary">{exp.date}</time>
               </div>
+
               <div className="space-y-2 text-muted-foreground">
                 {exp.paragraphs.map((p, i) => (
                   <p key={i}>{p}</p>
