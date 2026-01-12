@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "@/components/Hero";
 import TechStack from "@/components/TechStack";
-import Projects from "@/components/Projects";
+// import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -19,9 +19,9 @@ export default function Home() {
         <AnimatedSection>
           <TechStack />
         </AnimatedSection>
-        <AnimatedSection>
+        {/* <AnimatedSection>
           <Projects />
-        </AnimatedSection>
+        </AnimatedSection> */}
       </main>
       <Footer />
     </div>

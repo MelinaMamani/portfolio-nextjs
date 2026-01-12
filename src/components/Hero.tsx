@@ -9,22 +9,22 @@ export default function Hero() {
   const { t } = useI18n();
 
   return (
-    <section className="min-h-screen flex items-center py-12 px-4 pt-20 sm:py-24">
+    <section className="min-h-screen flex items-center py-12 px-6 pt-20 sm:py-24">
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="
-          mx-auto 
-          max-w-md sm:max-w-5xl 
-          px-4 sm:px-6 
-          flex flex-col-reverse items-center gap-8 
+          mx-auto
+          w-full
+          max-w-md sm:max-w-5xl
+          flex flex-col-reverse items-center gap-8
           sm:flex-row sm:items-start sm:gap-12
         "
       >
         {/* Texto */}
-        <div className="text-center sm:text-left flex-1">
-          <h1 className="text-3xl font-bold leading-tight sm:text-4xl">
+        <div className="text-center sm:text-left flex-1 w-full">
+          <h1 className="text-2xl font-bold leading-tight sm:text-4xl wrap-break-word">
             {t?.hero?.greeting.split("").map((char, i) => (
               <motion.span
                 key={i}
@@ -37,7 +37,7 @@ export default function Hero() {
             ))}
           </h1>
 
-          <p className="mt-4 text-muted-foreground">{t?.hero?.aboutMe}</p>
+          <p className="mt-4 text-muted-foreground wrap-break-word">{t?.hero?.aboutMe}</p>
 
           {/* CTA buttons */}
           <div className="mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">

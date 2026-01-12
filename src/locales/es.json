@@ -3,8 +3,7 @@
     "brand": "Melina Mamaní Portfolio",
     "menu": [
       { "id": "experience", "text": "Experiencia", "href": "#experience" },
-      { "id": "tech", "text": "Tecnologías", "href": "#tech" },
-      { "id": "projects", "text": "Proyectos", "href": "#projects" }
+      { "id": "tech", "text": "Tecnologías", "href": "#tech" }
     ],
     "menuIconAlt": "icono de menú",
     "language": { "en": "EN", "es": "ES" }
@@ -12,19 +11,28 @@
   "hero": {
     "greeting": "¡Hola! Soy Melina Mamaní",
     "cta": "Conoce mi experiencia",
-    "secondaryCta": "Visualizar CV",
-    "secondaryLinkCta": "https://drive.google.com/file/d/1KYpZ0cigT2QcBOLTAqz_wc37HonPbSHk/view?usp=drive_link",
+    "secondaryCta": "Contáctame",
+    "secondaryLinkCta": "https://wa.me/5491161552715",
     "profileImageAlt": "Imagen de perfil",
-    "aboutMe": "Desarrolladora Frontend SSR de Buenos Aires con 4 años de experiencia. Trabajo con Next.js e integro herramientas de IA para optimizar procesos y entregar soluciones eficientes. Inglés intermedio-avanzado (FCE B2) para colaborar con equipos internacionales."
+    "aboutMe": "Desarrolladora web de Buenos Aires con 5 años de experiencia creando sitios y aplicaciones web. Me especializo en páginas optimizadas para celulares, rápidas y profesionales. Ayudo a negocios a tener presencia digital de calidad usando tecnología moderna y herramientas de IA para entregar proyectos eficientes."
   },
   "experience": {
     "title": "Experiencia",
     "items": [
       {
-        "place": "Mercado Libre",
-        "date": "Abril 2023 - Enero 2026",
+        "place": "JABA AI",
+        "date": "Diciembre 2025 - Actualidad",
         "paragraphs": [
-          "Actualmente formo parte del equipo de Seller Experience en Mercado Libre, uno de los ecosistemas de e-commerce más grandes de la región. Mi rol se centra en el desarrollo de soluciones orientadas a vendedores, contribuyendo a optimizar la gestión de sus operaciones dentro de la plataforma.",
+          "Actualmente trabajo como desarrolladora web para un cliente estadounidense, desarrollando una plataforma de gestión integral para atletas universitarios en Estados Unidos. El sistema permite a managers y administradores supervisar la actividad en redes sociales de los atletas, analizar estadísticas de rendimiento, crear campañas promocionales y gestionar diversos aspectos de su carrera deportiva.",
+          "Trabajo con React, TypeScript y Next.js para construir interfaces web responsivas y optimizadas. Recientemente desarrollé un sistema completo de gestión de eventos y tareas con calendario interactivo similar a Google Calendar, que permite a usuarios administrativos y atletas organizar y planificar sus actividades de manera eficiente. Además, estoy implementando un sistema de chat de difusión que permite la comunicación directa entre administradores y atletas dentro de la plataforma.",
+          "El proyecto involucra colaboración directa con el equipo del cliente en Estados Unidos, aplicando metodologías ágiles y entregando soluciones que mejoran la experiencia de uso y facilitan la gestión diaria de los usuarios de la plataforma."
+        ]
+      },
+      {
+        "place": "Mercado Libre",
+        "date": "Abril 2023 - Diciembre 2025",
+        "paragraphs": [
+          "Formé parte del equipo de Seller Experience en Mercado Libre, uno de los ecosistemas de e-commerce más grandes de la región. Mi rol se centró en el desarrollo de soluciones orientadas a vendedores, contribuyendo a optimizar la gestión de sus operaciones dentro de la plataforma.",
           "Trabajo principalmente con React, TypeScript y Next.js, aplicando estándares internos y buenas prácticas para garantizar un desarrollo sólido y escalable. También utilizo tecnologías internas de la compañía que permiten una integración eficiente con los distintos servicios y herramientas del ecosistema.",
 
           "Una parte importante de mi trabajo involucra la incorporación de inteligencia artificial en los flujos de desarrollo. Esto incluye la automatización de tareas, el análisis de patrones y la mejora continua del código mediante herramientas asistidas por IA, lo que acelera la entrega y eleva la calidad de las soluciones implementadas.",

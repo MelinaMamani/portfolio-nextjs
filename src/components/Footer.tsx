@@ -25,7 +25,7 @@ export default function Footer() {
             <span className="sr-only">{t?.footer?.github ?? "GitHub"}</span>
           </Link>
           <Link
-            href="https://linkedin.com/in/erika-lidia-melina"
+            href="https://www.linkedin.com/in/erika-lidia-melina-mamani/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label={t?.footer?.linkedinLabel}

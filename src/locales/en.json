@@ -3,8 +3,7 @@
     "brand": "Melina Mamaní Portfolio",
     "menu": [
       { "id": "experience", "text": "Experience", "href": "#experience" },
-      { "id": "tech", "text": "Technologies", "href": "#tech" },
-      { "id": "projects", "text": "Projects ", "href": "#projects" }
+      { "id": "tech", "text": "Technologies", "href": "#tech" }
     ],
     "menuIconAlt": "iconMenu",
     "language": { "en": "EN", "es": "ES" }
@@ -12,19 +11,28 @@
   "hero": {
     "greeting": "Hi there! I am Melina Mamaní",
     "cta": "See my work experience",
-    "secondaryCta": "View my Resume",
-    "secondaryLinkCta": "https://drive.google.com/file/d/1T05gGN1VQ6ODo4Ax_h-PZvadTtnfZcPh/view?usp=drive_link",
+    "secondaryCta": "Contact me",
+    "secondaryLinkCta": "https://wa.me/5491161552715",
     "profileImageAlt": "Profile Image",
-    "aboutMe": "Frontend Developer (SSR) from Buenos Aires with 4 years of experience. Skilled in Next.js and AI tools to optimize workflows, with advanced-intermediate English (FCE B2) for international collaboration."
+    "aboutMe": "Web developer from Buenos Aires with 5 years of experience building websites and web applications. I specialize in mobile-optimized, fast, and professional websites. I help businesses establish quality digital presence using modern technology and AI tools to deliver efficient projects."
   },
   "experience": {
     "title": "Experience",
     "items": [
       {
-        "place": "Mercado Libre",
-        "date": "April 2023 - January 2026",
+        "place": "JABA AI",
+        "date": "December 2025 - Present",
         "paragraphs": [
-          "I am currently part of the Seller Experience team at Mercado Libre, one of the largest e-commerce ecosystems in the region. My work focuses on building solutions for sellers, helping improve the management of their operations and enhancing their overall experience on the platform.",
+          "I currently work as a web developer for a U.S. client, building a comprehensive management platform for college athletes in the United States. The system enables managers and administrators to monitor athletes' social media activity, analyze performance statistics, create promotional campaigns, and manage various aspects of their athletic careers.",
+          "I work with React, TypeScript, and Next.js to build responsive and optimized web interfaces. I recently developed a complete event and task management system with an interactive calendar similar to Google Calendar, allowing administrative users and athletes to organize and plan their activities efficiently. Additionally, I am implementing a broadcast chat system that enables direct communication between administrators and athletes within the platform.",
+          "The project involves direct collaboration with the client's team in the United States, applying agile methodologies and delivering solutions that improve user experience and facilitate daily platform management."
+        ]
+      },
+      {
+        "place": "Mercado Libre",
+        "date": "April 2023 - December 2025",
+        "paragraphs": [
+          "I was part of the Seller Experience team at Mercado Libre, one of the largest e-commerce ecosystems in the region. My work focused on building solutions for sellers, helping improve the management of their operations and enhancing their overall experience on the platform.",
 
           "I develop web applications primarily using React, TypeScript, and Next.js, following internal standards and best practices to ensure scalable and maintainable solutions. I also work with internal technologies built specifically for Mercado Libre's ecosystem, enabling seamless integration with platform services and tools.",
 

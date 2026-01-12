@@ -12,6 +12,9 @@ const poppins = Poppins({
 });
 
 export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
   themeColor: "#0f172a",
 };
 
@@ -21,8 +24,8 @@ export const metadata: Metadata = {
   description:
     "Portfolio personal: Frontend Engineer · Next.js, TypeScript, TailwindCSS",
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: "/hero/me.jpeg",
+    apple: "/hero/me.jpeg",
   },
   openGraph: {
     title: "Melina Mamaní — Portfolio",
@@ -30,7 +33,7 @@ export const metadata: Metadata = {
       "Portfolio personal: Frontend Engineer · Next.js, TypeScript, TailwindCSS",
     url: "/",
     siteName: "Melina Mamaní",
-    images: [{ url: "/favicon.ico", alt: "Melina Mamaní" }],
+    images: [{ url: "/hero/me.jpeg", alt: "Melina Mamaní" }],
     type: "website",
   },
   twitter: {
@@ -48,7 +51,7 @@ export default async function RootLayout({
 }>) {
   const cookieStore = await cookies();
   const cookieLocale = (cookieStore.get("locale")?.value ?? "") as string;
-  const locale = cookieLocale === "es" ? "es" : "en";
+  const locale = cookieLocale === "en" ? "en" : "es";
 
   return (
     <html lang={locale} className={poppins.className}>
