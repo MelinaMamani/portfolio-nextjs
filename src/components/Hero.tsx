@@ -9,7 +9,7 @@ export default function Hero() {
   const { t } = useI18n();
 
   return (
-    <section className="min-h-screen flex items-center py-12 px-6 pt-20 sm:py-24">
+    <section className="flex items-start py-8 px-6 pt-24 pb-12 sm:min-h-screen sm:items-center sm:py-24">
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
@@ -24,20 +24,27 @@ export default function Hero() {
       >
         {/* Texto */}
         <div className="text-center sm:text-left flex-1 w-full">
-          <h1 className="text-2xl font-bold leading-tight sm:text-4xl wrap-break-word">
-            {t?.hero?.greeting.split("").map((char, i) => (
-              <motion.span
-                key={i}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: i * 0.05 }}
-              >
-                {char === " " ? "\u00A0" : char}
-              </motion.span>
+          <h1 className="text-2xl font-bold leading-snug md:text-4xl md:leading-tight break-words">
+            {t?.hero?.greeting.split(" ").map((word, wordIndex) => (
+              <span key={wordIndex} className="inline-block mr-2">
+                {word.split("").map((char, charIndex) => (
+                  <motion.span
+                    key={charIndex}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: (wordIndex * 10 + charIndex) * 0.05 }}
+                    className="inline-block"
+                  >
+                    {char}
+                  </motion.span>
+                ))}
+              </span>
             ))}
           </h1>
 
-          <p className="mt-4 text-muted-foreground wrap-break-word">{t?.hero?.aboutMe}</p>
+          <p className="mt-4 text-base md:text-lg text-muted-foreground break-words">
+            {t?.hero?.aboutMe}
+          </p>
 
           {/* CTA buttons */}
           <div className="mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
@@ -60,7 +67,7 @@ export default function Hero() {
         </div>
 
         {/* Imagen */}
-        <div className="relative w-40 h-40 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-lg">
+        <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg">
           <Image
             src="/hero/me.jpeg"
             alt={t?.hero?.profileImageAlt}
